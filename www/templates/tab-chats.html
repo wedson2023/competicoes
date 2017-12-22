@@ -1,0 +1,22 @@
+<ion-view view-title="Cadastro">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-person-add placeholder-icon"></i>
+        <input type="text" ng-model="competidor" placeholder="Inserir">
+      </label>
+    </div>
+    <div class="row">
+	  <div class="col-50 padding-horizontal"><button ng-click="cadastrar(competidor)" class="button button-full button-positive">Cadastrar</button></div>
+	  <div class="col-50 padding-horizontal"><button ng-click="concluir()" class="button button-full button-assertive">{{ corrida === undefined ? 'Concluir' : 'Excluir' }}</button></div>
+	</div>
+    <div class="padding-horizontal">    	
+		<ion-list>
+			<ion-item ng-repeat="competidor in competidores" can-swipe="true">		 		
+			 	<span ng-bind="competidor.nome"></span>
+			 	 <ion-option-button class="button-assertive button-info" ng-click="excluir(competidor)">Excluir</ion-option-button>
+			</ion-item>
+		</ion-list>
+    </div>    
+  </ion-content>
+</ion-view>

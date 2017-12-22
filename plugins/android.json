@@ -1,0 +1,33 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.corrida312580"
+        }
+    },
+    "dependent_plugins": {}
+}

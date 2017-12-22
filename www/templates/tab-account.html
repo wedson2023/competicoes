@@ -1,0 +1,15 @@
+<ion-view view-title="Impressora">
+  <ion-content>
+  	<div class="item item-divider">
+		Conectada a <span ng-bind="conectada ? conectada : 'nenhuma impressora'"></span>
+	</div>
+  	<span class="item item-icon-left" ng-repeat="impressora in impressoras" ng-click="conectar(impressora.id, impressora.name)">	
+	   <i class="icon ion-printer"></i>
+	   <span ng-bind="impressora.name"></span>
+	  </span>
+	  <div class="padding">
+		  <button class="button button-block button-positive" ng-click="pesquisar()">Pesquisar Impressoras</button>
+		  <button class="button button-block button-assertive" ng-click="desconectar()">Remover Impressora</button>	  	
+	  </div>
+  </ion-content>
+</ion-view>

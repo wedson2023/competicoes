@@ -1,0 +1,11 @@
+<ion-view view-title="Apostas">
+  <ion-content class="padding">
+  		<button ng-click="limpar()" class="button button-full button-assertive">Apostas: <strong ng-bind="quantidade"></strong>, deseja limpar?</button>
+  <div class="list">
+	  <span class="item item-icon-left" ng-repeat="competidor in competidores" ng-click="apostar(competidor.nome)">
+	    <i class="icon ion-compose"></i>
+	   <span style="text-transform: capitalize;" ng-bind="competidor.nome"></span>
+	  </span>
+	</div>
+  </ion-content>
+</ion-view>
